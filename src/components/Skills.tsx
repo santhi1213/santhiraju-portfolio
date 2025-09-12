@@ -33,11 +33,11 @@ const Skills = () => {
     { name: 'TypeScript', icon: '🔷' },
     { name: 'Next.js', icon: '▲' },
     { name: 'Tailwind', icon: '🎨' },
-    { name: 'GraphQL', icon: '🕸️' },
-    { name: 'Docker', icon: '🐳' },
+    // { name: 'GraphQL', icon: '🕸️' },
+    // { name: 'Docker', icon: '🐳' },
     { name: 'AWS', icon: '☁️' },
     { name: 'Git', icon: '📚' },
-    { name: 'Redux', icon: '🔄' }
+    // { name: 'Redux', icon: '🔄' }
   ];
 
   return (

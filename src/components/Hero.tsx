@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
 import { useData } from '../contexts/DataContext';
+import Resume from '../assets/Resume.pdf'
 
 const Hero = () => {
   const { aboutInfo, contactInfo } = useData();
@@ -9,11 +10,11 @@ const Hero = () => {
   const [isDeleting, setIsDeleting] = useState(false);
 
   const titles = ['MERN Stack Developer', 'Full Stack Engineer', 'React Specialist', 'Node.js Expert'];
-  
+
   useEffect(() => {
     const typeSpeed = isDeleting ? 50 : 100;
     const currentTitle = titles[currentIndex];
-    
+
     const timeout = setTimeout(() => {
       if (!isDeleting) {
         if (displayText.length < currentTitle.length) {
@@ -66,24 +67,34 @@ const Hero = () => {
               {aboutInfo.name}
             </span>
           </h1>
-          
+
           <div className="text-2xl md:text-3xl text-gray-300 mb-8 h-12">
             <span className="border-r-2 border-blue-400 animate-pulse">
               {displayText}
             </span>
           </div>
-          
+
           <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
             {aboutInfo.bio}
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">
             <button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-              View My Work
+              <a href="#projects">
+                View My Work
+              </a>
             </button>
-            <button className="border border-gray-500 text-gray-300 px-8 py-3 rounded-full hover:border-blue-400 hover:text-blue-400 transition-all duration-300">
+            {/* <button className="border border-gray-500 text-gray-300 px-8 py-3 rounded-full hover:border-blue-400 hover:text-blue-400 transition-all duration-300">
               Download CV
-            </button>
+            </button> */}
+            <a
+              href={Resume}
+              download="My_Resume.pdf"
+              className="border border-gray-500 text-gray-300 px-8 py-3 rounded-full hover:border-blue-400 hover:text-blue-400 transition-all duration-300"
+            >
+              Download CV
+            </a>
+
           </div>
 
           <div className="flex items-center justify-center space-x-6">
@@ -100,7 +111,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <button 
+      <button
         onClick={scrollToNext}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce hover:text-blue-400 transition-colors duration-300"
       >

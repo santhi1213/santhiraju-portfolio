@@ -19,7 +19,7 @@ const About = () => {
     {
       icon: Database,
       title: 'Database Management',
-      description: 'Experienced with MongoDB, PostgreSQL, and Redis'
+      description: 'Experienced with MongoDB, PostgreSQL'
     },
     {
       icon: Smartphone,
