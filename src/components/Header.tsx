@@ -75,13 +75,13 @@ const Header = () => {
                 {item.label}
               </button>
             ))}
-            <Link
+            {/* <Link
               to="/admin"
               className="text-gray-300 hover:text-blue-400 transition-colors duration-300 flex items-center space-x-1"
             >
               <Settings className="w-4 h-4" />
               <span className="text-sm">Admin</span>
-            </Link>
+            </Link> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -109,14 +109,14 @@ const Header = () => {
                 {item.label}
               </button>
             ))}
-            <Link
+            {/* <Link
               to="/admin"
               className="text-gray-300 hover:text-blue-400 transition-colors duration-300 flex items-center space-x-2 text-sm font-medium text-left"
               onClick={() => setIsOpen(false)}
             >
               <Settings className="w-4 h-4" />
               <span>Admin Panel</span>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </nav>
