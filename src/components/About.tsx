@@ -89,10 +89,10 @@ const About = () => {
                     <div className="bg-gradient-to-r from-purple-400 to-purple-500 h-2 rounded-full" style={{ width: '88%' }}></div>
                   </div>
 
-                  <div className="flex justify-between items-center">
+                  {/* <div className="flex justify-between items-center">
                     <span className="text-gray-400">DevOps</span>
                     <span className="text-yellow-400 font-semibold">85%</span>
-                  </div>
+                  </div> */}
                   <div className="w-full bg-gray-700 rounded-full h-2">
                     <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 h-2 rounded-full" style={{ width: '85%' }}></div>
                   </div>

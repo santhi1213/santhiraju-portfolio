@@ -617,12 +617,12 @@ const defaultSkills: Skill[] = [
 
   // Tools & Technologies
   { id: '16', name: 'Git/GitHub', level: 93, category: 'tools' },
-  { id: '17', name: 'Docker', level: 82, category: 'tools' },
+  // { id: '17', name: 'Docker', level: 82, category: 'tools' },
   { id: '18', name: 'VS Code', level: 95, category: 'tools' },
   { id: '19', name: 'Postman', level: 88, category: 'tools' },
   { id: '20', name: 'Netlify/Vercel', level: 90, category: 'tools' },
   { id: '21', name: 'WordPress', level: 85, category: 'tools' },
-  { id: '22', name: 'Figma', level: 78, category: 'tools' },
+  // { id: '22', name: 'Figma', level: 78, category: 'tools' },
 ];
 
 const defaultProjects: Project[] = [
