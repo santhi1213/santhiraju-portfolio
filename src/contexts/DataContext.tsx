@@ -613,7 +613,7 @@ const defaultSkills: Skill[] = [
   { id: '12', name: 'Mongoose ODM', level: 87, category: 'backend' },
   { id: '13', name: 'RESTful APIs', level: 91, category: 'backend' },
   { id: '14', name: 'JWT Authentication', level: 89, category: 'backend' },
-  { id: '15', name: 'MySQL', level: 82, category: 'backend' },
+  //{ id: '15', name: 'MySQL', level: 82, category: 'backend' },
 
   // Tools & Technologies
   { id: '16', name: 'Git/GitHub', level: 93, category: 'tools' },
